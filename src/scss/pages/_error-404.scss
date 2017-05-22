@@ -1,0 +1,32 @@
+// =error404
+// -----------------------------------------------------------------------------
+
+.error404 main {
+	max-width: 600px;
+	margin: 60px auto 0 auto;
+	text-align: center;
+}
+
+.error404 h2, .error404 p {
+	margin-bottom: 20px
+}
+
+.error404 h2 {
+	font-size: 48px;
+	text-transform: uppercase;
+}
+
+.error404 p {
+	font-size: 36px;
+	color: #777;
+}
+
+@media (max-width: 480px) {
+	.error404 h2 {
+		font-size: 24px;
+	}
+
+	.error404 p {
+		font-size: 16px;
+	}
+}

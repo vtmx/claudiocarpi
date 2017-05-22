@@ -1,0 +1,56 @@
+// =contact
+// -----------------------------------------------------------------------------
+
+.contact {
+	.main {
+		max-width: 600px;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	a img {
+		transition: all .3s;
+	}
+
+	a:hover img, a:focus img {
+		opacity: .8;
+	}
+
+	.client {
+		margin: 20px 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eee;
+		text-align: center;
+	}
+
+	.client:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border: none;
+	}
+
+	.licensing {
+		font-size: 24px;
+	}
+}
+
+// =media
+// -----------------------------------------------------------------------------
+
+@media (max-width: 920px) {
+	.contact {
+		.main {
+			margin: 0 10px;
+		}
+
+		.logo-copious {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

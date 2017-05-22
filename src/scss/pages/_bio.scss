@@ -1,0 +1,85 @@
+// =bio
+// -----------------------------------------------------------------------------
+
+.bio {
+    h2 {
+        margin-bottom: 15px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        margin: 5px 0 10px 0;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    main {
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+
+    main li {
+        line-height: 2;
+    }
+
+    .description {
+        max-width: 600px;
+        margin: 0 auto 50px auto;
+        font-weight: 300;
+        text-align: justify;
+        color: #777;
+    }
+
+    .clients {
+        text-align: center;
+    }
+
+    .client {
+        display: inline-block;
+        width: 30%;
+        margin: 0 1% 20px 1%;
+        vertical-align: top;
+        white-space: nowrap;
+    }
+}
+
+// =media
+// -----------------------------------------------------------------------------
+
+@media (max-width: 920px) {
+    .bio {
+        .description {
+            margin: 20px auto;
+        }
+
+        .clients {
+            h2 {
+                padding-top: 20px;
+            }
+
+            .client {
+                display: block;
+                width: auto;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 720px) {
+    .bio {
+        .description {
+            margin: 20px;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 385px) {
+    .bio {
+        .description {
+            margin: 20px 5px;
+        }
+    }
+}

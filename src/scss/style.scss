@@ -1,0 +1,21 @@
+// Reset and dependencies
+@import 'base/normalize';
+@import 'base/base';
+
+// Abstracts
+@import 'abstracts/variables';
+
+// Layout
+@import 'layout/header';
+
+// Pages
+@import 'pages/home';
+@import 'pages/works';
+@import 'pages/single-works';
+@import 'pages/bio';
+@import 'pages/contact';
+@import 'pages/error-404';
+
+// Plugins
+@import 'plugins/animation';
+@import 'plugins/vegas';

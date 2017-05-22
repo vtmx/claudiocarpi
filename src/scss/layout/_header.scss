@@ -1,0 +1,222 @@
+// =header
+// -----------------------------------------------------------------------------
+
+.header {
+	margin: 0 auto 30px auto;
+}
+
+// =logo
+
+.header .logo {
+	margin-bottom: 30px;
+}
+
+.header .logo a {
+	display: block;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.header .logo svg {
+	transition: all .3s;
+}
+
+// =nav
+// -----------------------------------------------------------------------------
+
+.nav {
+	position: relative;
+	text-align: center;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.menu li {
+	flex-grow: 1;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.menu a {
+	display: block;
+	padding: 5px 0;
+	color: #000;
+}
+
+.current-menu-item a, .menu a:hover, .menu a:focus, .toggle:hover, .toggle:focus {
+	color: #f0f;
+}
+
+.nav a:active, .toggle:active {
+	color: #f0f;
+	transition: none;
+}
+
+.menu-item-instagram a {
+	display: block;
+	position: absolute;
+	top: -3px;
+	right: 50px;
+	overflow: hidden;
+	width: 32px;
+	height: 32px;
+	background: url(../img/icon-instagram.svg) no-repeat center center;
+	background-size: cover;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.toggle {
+	display: none;
+	padding: 5px 50px;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	color: #777;
+}
+
+// =footer
+// -----------------------------------------------------------------------------
+
+.footer {
+	display: none;
+	margin-top: 50px;
+	padding-top: 10px;
+	border-top: 1px solid #eee;
+	text-align: center;
+}
+
+// =media
+// -----------------------------------------------------------------------------
+
+@media (max-width: 1200px) {
+	.header {
+		margin: 20px;
+	}
+
+	.main {
+		max-width: 771px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 920px) {
+	.browserupgrade {
+		display: none;
+	}
+
+	.header.animated, .nav.animated {
+		animation: none;
+	}
+
+	.nav {
+		margin-bottom: 10px;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+	.menu {
+		display: none;
+		flex-direction: column;
+	}
+
+	// menu-active
+	.menu-active {
+		display: block;
+	}
+
+	.menu li {
+		border-bottom: 1px solid #eee;
+	}
+
+	.menu a, .toggle {
+		display: block;
+		padding: 20px 0 15px;
+	}
+
+	// =instagram
+	.menu .menu-item-instagram {
+		padding: 10px 0;
+	}
+
+	.menu .menu-item-instagram a {
+		position: inherit;
+		margin: 0 auto;
+		padding: 0;
+		border: none;
+	}
+
+	// =toggle
+	.toggle, .toggle i, .toggle i:before, .toggle i:after {
+		transition: none;
+	}
+
+	.toggle:hover, .toggle:focus {
+		color: #000;
+	}
+
+	.toggle span {
+		display: inline-block;
+		margin: 8px 5px 5px 0;
+	}
+
+	.toggle i, .toggle i:after, .toggle i:before {
+		display: block;
+		width: 24px;
+		height: 4px;
+		background: #000;
+	}
+
+	.toggle i:before, .toggle i:after {
+		position: absolute;
+		content: '';
+	}
+
+	.toggle i:before {
+		margin-top: -8px;
+	}
+
+	.toggle i:after {
+		margin-top: 8px;
+	}
+
+	// toggle-active
+
+	.toggle-active i, .toggle-active:hover i {
+		background: transparent;
+	}
+
+	.toggle-active i:before {
+		margin-top: 0;
+		transform: rotate(45deg);
+	}
+
+	.toggle-active i:after {
+		transition-property: margin, transform;
+	}
+
+	.toggle-active i:after {
+		margin-top: 0;
+		transform: rotate(-45deg);
+	}
+}
+
+@media (max-width: 385px) {
+	.header {
+		margin: 15px 10px 10px 10px;
+	}
+
+	.main {
+		max-width: none;
+		margin: 0 10px;
+	}
+}
