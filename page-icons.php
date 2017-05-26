@@ -2,10 +2,13 @@
 <?php get_template_part('nav'); ?>
 
 <?php
+// Get number of works display in page
+$works_count = get_field('works-count');
+
 // WP_Query arguments
 $args = array(
 	'post_type'      => 'works',
-	'posts_per_page' => 18,
+	'posts_per_page' => $works_count,
 	'orderby'        => 'rand',
 	'tax_query' => array(
 		array(

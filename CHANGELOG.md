@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.0] - 2017-05-23
+### Changed
+- Páginas de Works.
+
 ## [0.3.0] - 2017-05-19
 ### Fixed
 - Home page.
