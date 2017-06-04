@@ -2,13 +2,13 @@
 <?php get_template_part('nav'); ?>
 
 <?php
+// Works Front
+$ids = get_field('works-front', false, false);
 
 // WP_Query arguments
 
-$ids = get_field('works-front', false, false);
-
 $args = array(
-	'post_type' 	 => 'works',
+	'post_type' 	 => 'work',
 	'posts_per_page' => 21,
 	'post__in'       => $ids,
 	'post_status'    => 'any',

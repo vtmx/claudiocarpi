@@ -7,7 +7,7 @@ $works_count = get_field('works-count');
 
 // WP_Query arguments
 $args = array(
-	'post_type'      => 'works',
+	'post_type'      => 'work',
 	'posts_per_page' => $works_count,
 	'orderby'        => 'rand',
 	'tax_query' => array(

@@ -15,12 +15,10 @@
 
 				<?php // If vertical ?>
 				<?php if ( $orientation ): ?>
-
 					<a class="work image horizontal <?php echo $post->post_name; ?>" href="<?php the_permalink(); ?>">
 						<img src="<?php echo $imageThumb['sizes']['page-works-horizontal']; ?>" alt="<?php the_title(); ?>">
 						<h2><?php the_title(); ?></h2>
 					</a>
-
 				<?php // If horizontal ?>
 				<?php else: ?>
 					<a class="work image vertical <?php echo $post->post_name; ?>" href="<?php the_permalink(); ?>">
@@ -30,7 +28,7 @@
 				<?php endif; ?>
 
 			<?php // If thumb video ?>
-			<?php elseif ( $videoThumb ): ?>
+			<?php elseif ( !$imageThumb && $videoThumb ): ?>
 
 				<a class="work video <?php echo $post->post_name; ?> horizontal" href="<?php the_permalink(); ?>" data-html="#<?php echo $post->post_name; ?> horizontal">
 					<video src="<?php echo $videoThumb; ?>" autoplay loop muted></video>
@@ -38,7 +36,6 @@
 				</a>
 
 			<?php endif; ?>
-
 		<?php endwhile; ?>
 
 		<?php wp_reset_postdata(); ?>
