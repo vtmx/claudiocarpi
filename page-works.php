@@ -2,17 +2,15 @@
 <?php get_template_part('nav'); ?>
 
 <?php
-// Works Front
-$ids = get_field('works-front', false, false);
+// Get number of works display in page
+$works_count = get_field('works-count');
 
 // WP_Query arguments
 
 $args = array(
 	'post_type' 	 => 'work',
-	'posts_per_page' => 21,
-	'post__in'       => $ids,
-	'post_status'    => 'any',
-	'orderby'        => 'post__in'
+	'posts_per_page' => $works_count,
+	'orderby'        => 'rand'
 );
 
 // The Query

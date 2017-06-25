@@ -8,7 +8,7 @@
 		<?php if ( is_front_page() ): ?>
 
 			<?php // If slider and not video ?>
-			<?php if( get_field('home-slider') && !get_field('home-video') ): ?>			
+			<?php if( get_field('home-slider') && !get_field('home-video') ): ?>
 
 				<script>
 					<?php $images = get_field('home-slider'); ?>

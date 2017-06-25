@@ -1,10 +1,12 @@
 <?php get_template_part('header'); ?>
 
-	<h1 class="home-logo">
-		<a href="<?php echo esc_url( home_url( ) ); ?>/works"  title="Enter site">
-			<?php get_template_part('logo'); ?>
-		</a>
-	</h1>
+	<?php if( get_field('home-slider') && !get_field('home-video') ): ?>
+		<h1 class="home-logo">
+			<a href="<?php echo esc_url( home_url( ) ); ?>/works"  title="Enter site">
+				<?php get_template_part('logo'); ?>
+			</a>
+		</h1>
+	<?php endif; ?>
 
 	<div class="home-cover">
 		<?php // If video and not slide ?>
