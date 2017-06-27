@@ -541,6 +541,9 @@ body {
 .header .logo svg {
   transition: all .3s; }
 
+.header .logo .video {
+  display: none; }
+
 .nav {
   position: relative;
   text-align: center; }
