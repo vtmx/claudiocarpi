@@ -14,43 +14,21 @@ $(window).on('load', function() {
 
 	// Matchmedia
 	// -----------------------------------------------------------------------------
-	// if (window.matchMedia('(min-width: 480px)').matches) {
-	//
-	// 	// Masonry single
-	// 	var $masonry = $('.masonry');
-	//
-	// 	// Loaded images single
-	// 	$masonry.imagesLoaded(function() {
-	//
-	// 		$masonry.masonry({
-	// 			itemSelector: '.work', // selector
-	// 			columnWidth: 370,      // size
-	// 			fitWidth: true,        // center
-	// 			gutter: 20,            // margin
-	// 			isFitWidth: true,
-	// 			transitionDuration: 0  // no transition
-	// 		});
-	//
-	// 		$masonry.css('visibility', 'visible');
-	//
-	// 	}); // imagesLoaded
-	//
-	// } // matchMedia
+	if (window.matchMedia('(min-width: 480px)').matches) {
+		var grid = new Muuri('.works', {
 
-	var grid = new Muuri('.works', {
+			// Item elements
+		    items: '.work',
 
-		// Item elements
-	    items: '.work',
-
-	    // Layout
-	    layout: {
-	      fillGaps: true,
-	      horizontal: false,
-	      alignRight: false,
-	      alignBottom: false
-	    }
-	});
-
+		    // Layout
+		    layout: {
+		      fillGaps: true,
+		      horizontal: false,
+		      alignRight: false,
+		      alignBottom: false
+		    }
+		});
+	} // matchMedia
 
 	// Single Works Icons
 	// -----------------------------------------------------------------------------

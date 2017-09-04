@@ -2,7 +2,7 @@
 
 ## [0.4.0] - 2017-09-03
 ### Changed
-- Muita coisa extressante.
+- Muita coisa estressante.
 
 ## [0.3.1] - 2017-05-23
 ### Changed
