@@ -11,24 +11,27 @@
 
 			<?php foreach ($images as $image): ?>
 
-				<?php // Get orientation of image ?>
-				<?php $orientation = get_field('works-orientation', $image[id]); ?>
+				<?php // Get work size ?>
+				<?php $workSize = get_field('work-size-single', $image[id]); ?>
 
-				<?php // If vertical ?>
-				<?php if ( $orientation ): ?>
-
-					<div class="work horizontal">
-						<img src="<?php echo $image['sizes']['single-works-horizontal']; ?>" alt="<?php echo $image['title']; ?>">
-					</div>
-
-				<?php // If horizontal ?>
+				<?php if ( $workSize == 4 ): ?>
+					<?php $col = '4'; ?>
+					<?php $size = $image['sizes']['work-single-4']; ?>
+				<?php elseif ( $workSize == 3 ): ?>
+					<?php $col = '3'; ?>
+					<?php $size = $image['sizes']['work-single-3']; ?>
+				<?php elseif ( $workSize == 2 ): ?>
+					<?php $col = '2'; ?>
+					<?php $size = $image['sizes']['work-single-2']; ?>
 				<?php else: ?>
-
-					<div class="work vertical">
-						<img src="<?php echo $image['sizes']['single-works-vertical']; ?>" alt="<?php echo $image['title']; ?>">
-					</div>
-
+					<?php $col = '1'; ?>
+					<?php $size = $image['sizes']['work-single-1']; ?>
 				<?php endif; ?>
+
+				<div class="work w<?php echo $col; ?>">
+					<img src="<?php echo $size; ?>" alt="<?php echo $image['title']; ?>">
+				</div>
+
 
 			<?php endforeach; ?>
 

@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.0] - 2017-09-03
+### Changed
+- Muita coisa extressante.
+
 ## [0.3.1] - 2017-05-23
 ### Changed
 - Páginas de Works modificado para ser como uma categoria.

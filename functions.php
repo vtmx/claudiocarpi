@@ -10,17 +10,17 @@
 	// -----------------------------------------------------------------------------
 	register_nav_menu( 'menu_main', 'Menu' );
 
-	// Image sizes
+	// Image sizes ACF get medium size in Dashboard
 	// -----------------------------------------------------------------------------
 
-	// Medium size = Thumbnail
-	// Gallery ACF get medium size in Dashboard
+	// Work Gallery
+	add_image_size( 'work-gallery-1', 370, 504, true );
+	add_image_size( 'work-gallery-2', 760, 504, true );
+	add_image_size( 'work-gallery-3', 1150, 504, true );
 
-	// Page works
-	add_image_size( 'page-works-vertical', 380, 520, true );
-	add_image_size( 'page-works-horizontal', 770, 520, true );
-
-	// Single works
-	add_image_size( 'single-works-vertical', 560, 9999, false  );
-	add_image_size( 'single-works-horizontal', 1140, 9999, false  );
+	// Work Single
+	add_image_size( 'work-single-1', 370, 9999, false );
+	add_image_size( 'work-single-2', 565, 9999, false );
+	add_image_size( 'work-single-3', 760, 9999, false );
+	add_image_size( 'work-single-4', 1150, 9999, false );
 ?>
