@@ -12,15 +12,15 @@
 			<?php foreach ($images as $image): ?>
 
 				<?php // Get work size ?>
-				<?php $workSize = get_field('work-size-single', $image[id]); ?>
+				<?php $imageSize = get_field('work-size', $image[id]); ?>
 
-				<?php if ( $workSize == 4 ): ?>
+				<?php if ( $imageSize == 4 ): ?>
 					<?php $col = '4'; ?>
 					<?php $size = $image['sizes']['work-single-4']; ?>
-				<?php elseif ( $workSize == 3 ): ?>
+				<?php elseif ( $imageSize == 3 ): ?>
 					<?php $col = '3'; ?>
 					<?php $size = $image['sizes']['work-single-3']; ?>
-				<?php elseif ( $workSize == 2 ): ?>
+				<?php elseif ( $imageSize == 2 ): ?>
 					<?php $col = '2'; ?>
 					<?php $size = $image['sizes']['work-single-2']; ?>
 				<?php else: ?>

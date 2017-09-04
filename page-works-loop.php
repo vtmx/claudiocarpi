@@ -9,15 +9,15 @@
 			<?php $videoThumb = get_field('works-video-thumb'); ?>
 
 			<?php // Get work size ?>
-			<?php $workSize = get_field('work-size-gallery', $imageThumb[id]); ?>
+			<?php $imageSize = get_field('works-image-size'); ?>
 
 			<?php // If thumb image ?>
 			<?php if ( $imageThumb ): ?>
 
-				<?php if ( $workSize == 3 ): ?>
+				<?php if ( $imageSize == 3 ): ?>
 					<?php $col = '3'; ?>
 					<?php $size = $imageThumb['sizes']['work-gallery-3']; ?>
-				<?php elseif ( $workSize == 2 ): ?>
+				<?php elseif ( $imageSize == 2 ): ?>
 					<?php $col = '2'; ?>
 					<?php $size = $imageThumb['sizes']['work-gallery-2']; ?>
 				<?php else: ?>
