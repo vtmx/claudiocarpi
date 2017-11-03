@@ -25,5 +25,8 @@
 	add_image_size( 'work-single-4', 1150, 9999, false );
 
 	// Jpeg quality
-	add_filter( 'jpeg_quality', function($arg) { return 100; } );
+	function max_jpeg_quality( $quality ) {
+	   return 100;
+	}
+	add_filter( 'jpeg_quality', 'max_jpeg_quality' );
 ?>
