@@ -13,7 +13,9 @@
 
 				<?php // Get work size ?>
 				<?php $imageSize = get_field('work-size', $image[id]); ?>
-				
+
+				<?php // FULL ?>
+
 				<!-- <?php $size = $image['url']; ?>
 
 				<?php if ( $imageSize == 4 ): ?>
@@ -24,7 +26,14 @@
 					<?php $col = '2'; ?>
 				<?php else: ?>
 					<?php $col = '1'; ?>
-				<?php endif; ?> -->
+				<?php endif; ?>
+
+				<div class="work w<?php echo $col; ?>">
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+				</div> -->
+
+
+				<?php // NORMAL ?>
 
 				<?php if ( $imageSize == 4 ): ?>
 					<?php $col = '4'; ?>
@@ -41,8 +50,9 @@
 				<?php endif; ?>
 
 				<div class="work w<?php echo $col; ?>">
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+					<img src="<?php echo $size; ?>" alt="<?php echo $image['title']; ?>">
 				</div>
+
 
 			<?php endforeach; ?>
 
