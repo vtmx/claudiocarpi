@@ -23,4 +23,7 @@
 	add_image_size( 'work-single-2', 565, 9999, false );
 	add_image_size( 'work-single-3', 760, 9999, false );
 	add_image_size( 'work-single-4', 1150, 9999, false );
+
+	// Jpeg quality
+	add_filter( 'jpeg_quality', function($arg) { return 100; } );
 ?>
