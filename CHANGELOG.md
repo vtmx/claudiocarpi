@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.1] - 2017-11-03
+### Fixed
+- Jpeg quality.
+
 ## [0.4.0] - 2017-09-03
 ### Changed
 - Muita coisa estressante.
