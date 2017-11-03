@@ -23,10 +23,4 @@
 	add_image_size( 'work-single-2', 565, 9999, false );
 	add_image_size( 'work-single-3', 760, 9999, false );
 	add_image_size( 'work-single-4', 1150, 9999, false );
-
-	// Jpeg quality
-	function max_jpeg_quality( $quality ) {
-	   return 100;
-	}
-	add_filter( 'jpeg_quality', 'max_jpeg_quality' );
 ?>
