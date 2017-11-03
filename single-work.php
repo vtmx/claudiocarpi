@@ -16,16 +16,16 @@
 
 				<?php if ( $imageSize == 4 ): ?>
 					<?php $col = '4'; ?>
-					<?php $size = $image['sizes']['full']; ?>
+					<?php $size = $image['sizes']['work-single-4']; ?>
 				<?php elseif ( $imageSize == 3 ): ?>
 					<?php $col = '3'; ?>
-					<?php $size = $image['sizes']['full']; ?>
+					<?php $size = $image['sizes']['work-single-3']; ?>
 				<?php elseif ( $imageSize == 2 ): ?>
 					<?php $col = '2'; ?>
-					<?php $size = $image['sizes']['full']; ?>
+					<?php $size = $image['sizes']['work-single-2']; ?>
 				<?php else: ?>
 					<?php $col = '1'; ?>
-					<?php $size = $image['sizes']['full']; ?>
+					<?php $size = $image['sizes']['work-single-1']; ?>
 				<?php endif; ?>
 
 				<div class="work w<?php echo $col; ?>">
