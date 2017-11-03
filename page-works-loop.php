@@ -26,7 +26,7 @@
 				<?php endif; ?>
 
 					<a class="work image w<?php echo $col; ?> <?php echo $post->post_name; ?>" href="<?php the_permalink(); ?>">
-						<img src="<?php echo $size ?>" alt="<?php the_title(); ?>">
+						<img src="<?php $imageSize ?>" alt="<?php the_title(); ?>">
 						<h2><?php the_title(); ?></h2>
 					</a>
 

@@ -23,4 +23,5 @@
 	add_image_size( 'work-single-2', 565, 9999, false );
 	add_image_size( 'work-single-3', 760, 9999, false );
 	add_image_size( 'work-single-4', 1150, 9999, false );
+	//add_image_size( 'full', 9999, 9999, false );
 ?>
