@@ -16,7 +16,7 @@
 
 				<?php // FULL ?>
 
-				<!-- <?php $size = $image['url']; ?>
+				<?php $size = $image['url']; ?>
 
 				<?php if ( $imageSize == 4 ): ?>
 					<?php $col = '4'; ?>
@@ -30,10 +30,10 @@
 
 				<div class="work w<?php echo $col; ?>">
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
-				</div> -->
+				</div>
 
 
-				<?php // NORMAL ?>
+				<!-- <?php // NORMAL ?>
 
 				<?php if ( $imageSize == 4 ): ?>
 					<?php $col = '4'; ?>
@@ -51,7 +51,7 @@
 
 				<div class="work w<?php echo $col; ?>">
 					<img src="<?php echo $size; ?>" alt="<?php echo $image['title']; ?>">
-				</div>
+				</div> -->
 
 
 			<?php endforeach; ?>

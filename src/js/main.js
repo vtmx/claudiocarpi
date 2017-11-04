@@ -40,7 +40,7 @@ $(window).on('load', function() {
 
 	 $('.single-works .icon-scrolltop').on('click', function(e) {
 		e.preventDefault();
-		$('html, body').animate({ scrollTop: $('body').offset().top }, 800, 'swing');
+		$('html, body').animate({ scrollTop: 0 }, 'slow');
 	});
 
 });
