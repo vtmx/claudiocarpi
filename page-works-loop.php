@@ -14,15 +14,18 @@
 			<?php // If thumb image ?>
 			<?php if ( $imageThumb ): ?>
 
+				<?php // Fullsize ?>
+				<?php $size = $imageThumb['url']; ?>
+
 				<?php if ( $imageSize == 3 ): ?>
 					<?php $col = '3'; ?>
-					<?php $size = $imageThumb['sizes']['work-gallery-3']; ?>
+					<?php //$size = $imageThumb['sizes']['work-gallery-3']; ?>
 				<?php elseif ( $imageSize == 2 ): ?>
 					<?php $col = '2'; ?>
-					<?php $size = $imageThumb['sizes']['work-gallery-2']; ?>
+					<?php //$size = $imageThumb['sizes']['work-gallery-2']; ?>
 				<?php else: ?>
 					<?php $col = '1'; ?>
-					<?php $size = $imageThumb['sizes']['work-gallery-1']; ?>
+					<?php //$size = $imageThumb['sizes']['work-gallery-1']; ?>
 				<?php endif; ?>
 
 					<a class="work image w<?php echo $col; ?> <?php echo $post->post_name; ?>" href="<?php the_permalink(); ?>">
@@ -33,7 +36,7 @@
 			<?php // If thumb video ?>
 			<?php elseif ( !$imageThumb && $videoThumb ): ?>
 
-				<a class="work video w3 <?php echo $post->post_name; ?> horizontal" href="<?php the_permalink(); ?>" data-html="#<?php echo $post->post_name; ?> horizontal">
+				<a class="work video w2 <?php echo $post->post_name; ?> horizontal" href="<?php the_permalink(); ?>" data-html="#<?php echo $post->post_name; ?> horizontal">
 					<video src="<?php echo $videoThumb; ?>" autoplay loop muted></video>
 					<h2><?php the_title(); ?></h2>
 				</a>
