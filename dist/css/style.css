@@ -718,11 +718,12 @@ body {
     display: block;
     position: absolute;
     overflow: hidden;
-    width: 370px;
-    height: 504px;
+    height: 500px;
     margin: 0 10px 20px;
     line-height: 0;
     text-align: center; }
+  .works .w1 {
+    width: 370px; }
   .works .w2 {
     width: 760px; }
   .works .w3 {
